@@ -1,0 +1,56 @@
+{
+	"schema":"1.0",
+	"title":"Redirections Manager",
+	"category":"Advanced Tools",
+	"privilege":"*",
+	"blocked":false,
+	"rowlink":false,
+	"rowsPerPage":20,
+	"showExtraColumn":false,
+	"custombar":false,
+	"source":{
+		"type":"sql",
+		"table":"do_redirector",
+		"sort":"id desc",
+		"limit":10
+	},
+	"datagrid":{
+		"id":{
+			"label":"ID",
+			"hidden":false,
+			"searchable":true,
+			"sortable":true,
+			"groupable":false,
+			"classes":"",
+			"style":"width:50px;",
+			"formatter":"text"
+		},
+		"source_uri":{
+			"label":"Source URI",
+			"searchable":true
+		},
+		"target_uri":{
+			"label":"Target URI",
+			"searchable":true,
+			"hidden":true
+		},
+		"redirection_type":{
+			"label":"Redirection Type",
+			"searchable":true
+		},
+		"blocked":{
+			"label":"Blocked",
+			"hidden":true,
+			"searchable":true
+		},
+		"edited_by":{
+			"label":"Updated By",
+			"hidden":true
+		},
+		"edited_on":{
+			"label":"Updated On",
+			"hidden":true,
+			"formatter":"date"
+		}
+	}
+}

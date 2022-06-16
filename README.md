@@ -1,4 +1,4 @@
-redirector
-==========
+# Redirection Module
 
-A module for Logiks Framework's cms app
+
+Logiks CMS Redirection module for handling system wide redirection.

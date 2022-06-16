@@ -1,0 +1,39 @@
+{
+	"source": {
+		"type": "sql",
+		"table": "do_redirector",
+		"where": ["id"]
+	},
+	"fields": {
+		"source_uri": {
+			"label": "Source URI",
+			"required": true,
+			"width": 12
+		},
+		"target_uri": {
+			"label": "Target URI",
+			"required": true,
+			"width": 12
+		},
+		"redirection_type": {
+			"label": "Redirection Type",
+			"type": "select",
+			"options": {
+				"302": "302",
+				"301": "301"
+			},
+			"default": "302",
+			"required": true
+		},
+		"blocked": {
+			"label": "Blocked",
+			"type": "select",
+			"options": {
+				"true": "True",
+				"false": "False"
+			},
+			"required": true,
+			"vmode": "edit"
+		}
+	}
+}
