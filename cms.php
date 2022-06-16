@@ -1,6 +1,11 @@
 <?php
 if(!defined('ROOT')) exit('No direct script access allowed');
 
+if(!_db() || !in_array("do_redirector", _db()->get_tableList())) {
+	echo "<h2 align=center><br><br>Plugin is not properly installed, try installing the plugin again.</h2>";
+	return;
+}
+
 $slug = _slug("module/subtype/type/refid");
 $type=$slug['subtype'];
 
